@@ -30,6 +30,20 @@
   } else {
     window.archeryCooldown = parseInt(archCooldown);
   };
+
+  const rugbyPlayerSpeed = localStorage.getItem('rugbyPlayerSpeed');
+  if (rugbyPlayerSpeed === null) {
+    window.teammateSpeed = 30;
+  } else {
+    window.teammateSpeed = parseFloat(rugbyPlayerSpeed);
+  };
+
+  const rugbyEnemySpeed = localStorage.getItem('rugbyEnemySpeed');
+  if (rugbyEnemySpeed === null) {
+    window.enemySpeed = 30;
+  } else {
+    window.enemySpeed = parseFloat(rugbyEnemySpeed);
+  };
 </script>
 
 <script nonce="Gz4XVC9SWcO3uf3mDFvUag">(function(){/*
